@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    width: 100%;
+    align-content: center;
+    padding-top: 24px;
+}
+
+.navigation-panel {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 78px;
+    gap: 16px;
+}
+
+.content-title {
+    display: flex;
+    font-family: '1871 TYGRA';
+    color: #002B6B;
+    font-size: 80px;
+}
+
+.content-paragraph {
+    display: flex;
+    font-family: 'Manrope';
+    color: #414D60;
+    font-size: 16px;
+}
+
+.main-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px;
+}
+
+.main-body__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body__text__title {
+    display: flex;
+    justify-content: center;
+    font-family: '1871 TYGRA';
+    color: #002B6B;
+    font-size: 50px;
+}
+
+.main-body__text__paragraph {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: '1871 TYGRA';
+    color: #002B6B;
+    font-size: 30px;
+}

@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    width: 100%;
+    align-content: center;
+    padding-top: 24px;
+}
+
+.navigation-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navigation-panel__logo {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-panel__links {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navigation-panel__links a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #272F3A; /* Цвет ссылок */
+    line-height: 150%;
+}
+
+.navigation-panel__links a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 16px;
+}
+
+.content-title {
+    display: flex;
+    font-family: 'Montserrat';
+    color: #002B6B;
+    font-size: 72px;
+}
+
+.content-paragraph {
+    display: flex;
+    font-family: 'Manrope';
+    color: #414D60;
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero__1 {
+    width: 622px;
+    height: 411px;
+    background-color: #f3f0d1; /* Цвет из макета */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Закругление углов */
+    overflow: hidden;
+}
+
+.hero__2 {
+    width: 622px;
+    height: 411px;
+    background-color: #E1E9FE; /* Цвет из макета */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Закругление углов */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
