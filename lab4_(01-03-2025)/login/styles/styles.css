@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Golos UI';
+    src: url('fonts/GolosUI-Regular.woff2') format('woff2'),
+         url('fonts/GolosUI-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Golos UI', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 140px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.person-image {
+    width: 462px;
+    height: 501px;
+    object-fit: cover;
+}
+
+.login-form {
+    width: 343px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Golos UI', Arial, sans-serif;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Golos UI', Arial, sans-serif;
+}
+
+.login-form button:hover {
+    background-color: #333;
+}
