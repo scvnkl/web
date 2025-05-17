@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Golos UI';
+    src: url('fonts/GolosUI-Regular.woff2') format('woff2'),
+        url('fonts/GolosUI-Regular.woff') format('woff');
+}
+
+.container {
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border-width: 5px;
+    border-color: #222222;
+}
+
+.ico-one {
+    margin-bottom: 16px;
+}
+
+.acc-name {
+    font: 500 14px "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0, 15px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.small-text {
+    font: 700 15px "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0, 15px;
+    color: #808080;
+    font-weight: normal;
+}
+
+.emoji {
+    border: none;
+    background-color: #F2F3F5;
+    border-radius: 8px;
+    width: 68px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.img-num {
+    position: relative;
+}
+
+.ico-img-num {
+    position: absolute;
+    border: none;
+    background-color: #222222;
+    opacity: 40%;
+    border-radius: 20px;
+    width: 44px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    bottom: 434px;
+    left: 414px;
+}
+
+.text-img-num {
+    font: 400 15px/18px "Golos UI", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: -0, 15px;
+    margin-left: 10px;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.acc-ico {
+    margin-left: 318px;
+}
+
+.post {
+    margin-top: 16px;
+}
+
+.ico-love {
+    margin-left: 12px;
+}
+
+.text-love {
+    font: 400 15px/18px "Golos UI", sans-serif;
+    color: #222222;
+    font-weight: normal;
+    letter-spacing: -0, 15px;
+    margin-left: 3px;
+}
+
+.post-text {
+    font: 400 15px/18px "Golos UI", sans-serif;
+    color: #222222;
+    font-weight: normal;
+    letter-spacing: 0, 15px;
+    width: 474px;
+    margin-top: 16px;
+}
+
+.text-time {
+    font: 700 14px "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0, 15px;
+    color: #808080;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.post-second {
+    margin-top: 36px;
+}

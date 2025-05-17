@@ -6,60 +6,85 @@
     font-style: normal;
 }
 
-body {
-    background-color: #fff;
-    font-family: 'Golos UI', Arial, sans-serif;
+.title {
+    font: 700 140px/100px "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: -160px;
+    left: -105px;
+}
+
+.text {
+    font: 700 15px/18px "Golos UI", sans-serif;
+    color: #222222;
+    font-weight: normal;
+}
+
+.text-email {
+    font: 700 13px/16px "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0, 08px;
+    color: #808080;
+    font-weight: normal;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.border-input {
+    display: block;
+    width: 319px;
+    border: none;
+    background-color: #F2F3F5;
+    border-radius: 10px; 
+    padding: 13px 12px;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    letter-spacing: -0.15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.border-continue {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 343px;
+    border: none;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 13px 12px;
+    color: #FFFFFF;
+    font: 400 16px/1.2 "Golos UI", sans-serif;
 }
 
 .container {
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
 }
 
-h1 {
-    font-size: 140px;
-    font-weight: bold;
-    margin: 0;
+.logination {
+    margin-left: 107px;
 }
 
-.person-image {
-    width: 462px;
-    height: 501px;
-    object-fit: cover;
+.block-email {
+    margin-bottom: 16px;
 }
 
-.login-form {
-    width: 343px;
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.block-password {
+    position: relative;
+    margin-bottom: 32px;
 }
 
-.login-form label {
-    font-size: 14px;
-    color: #333;
+.password-icon {
+    position: absolute;
+    top: 33px;
+    right: 12px;
 }
 
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Golos UI', Arial, sans-serif;
-}
-
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Golos UI', Arial, sans-serif;
-}
-
-.login-form button:hover {
-    background-color: #333;
+.image-title {
+    position: relative;
 }
