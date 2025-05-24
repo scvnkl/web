@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Счастливые билеты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Поиск счастливых билетов</h1>
+        <form id="ticketForm">
+            <label for="start">Начальный номер (6 цифр):</label>
+            <input type="text" id="start" name="start" pattern="\d{6}" required>
+            
+            <label for="end">Конечный номер (6 цифр):</label>
+            <input type="text" id="end" name="end" pattern="\d{6}" required>
+            
+            <button type="submit">Найти</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('ticketForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            
+            const response = await fetch('lucky.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.text();
+            document.getElementById('result').innerHTML = result || "Счастливых билетов не найдено";
+        });
+    </script>
+</body>
+</html>

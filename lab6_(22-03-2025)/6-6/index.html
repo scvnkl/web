@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор ОПЗ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор обратной польской записи</h1>
+        <form id="rpnForm">
+            <label for="expression">Введите выражение в ОПЗ:</label>
+            <input type="text" id="expression" name="expression" 
+                   placeholder="8 9 + 1 7 - *" required>
+            <button type="submit">Вычислить</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('rpnForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            
+            const response = await fetch('rpn.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.text();
+            document.getElementById('result').textContent = result;
+        });
+    </script>
+</body>
+</html>
