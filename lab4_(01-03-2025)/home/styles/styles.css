@@ -6,14 +6,18 @@
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 .icons {
+    position: fixed;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     border-width: 5px;
     border-color: #222222;
+    left: 0;
+    height: 100%;
 }
 
 .ico-one {
@@ -75,8 +79,6 @@
 
 .main {
     display: block;
-    width: 100%;
-    margin-left: 30%;
     margin-top: 3%;
 }
 

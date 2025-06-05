@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Объединение объектов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Объединение объектов</h1>
+        <form id="mergeForm">
+            <div class="input-group">
+                <label for="obj1">Объект 1 (JSON):</label>
+                <input type="text" id="obj1" placeholder='{"a": 1, "b": 2}' required>
+            </div>
+            <div class="input-group">
+                <label for="obj2">Объект 2 (JSON):</label>
+                <input type="text" id="obj2" placeholder='{"b": 3, "c": 4}' required>
+            </div>
+            <button type="submit">Объединить</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

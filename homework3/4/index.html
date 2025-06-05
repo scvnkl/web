@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бинарный поиск в массиве</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Бинарный поиск в массиве</h1>
+        <form id="searchForm">
+            <div class="input-group">
+                <label for="array">Введите отсортированный массив (через запятую):</label>
+                <input type="text" id="array" placeholder="1, 2, 3, 4, 5" required>
+            </div>
+            <div class="input-group">
+                <label for="element">Элемент для поиска:</label>
+                <input type="text" id="element" required>
+            </div>
+            <button type="submit">Найти</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

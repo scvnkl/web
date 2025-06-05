@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Объединение map и filter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Объединение map и filter</h1>
+        <form id="arrayForm">
+            <div class="input-group">
+                <label for="arrayInput">Введите числа через запятую:</label>
+                <input type="text" id="arrayInput" value="2, 5, 8, 10, 3" required>
+            </div>
+            <button type="submit">Обработать массив</button>
+        </form>
+        <div class="result-container">
+            <h3>Исходный массив:</h3>
+            <div id="sourceArray" class="code-block"></div>
+            <h3>После map (умножить на 3):</h3>
+            <div id="afterMap" class="code-block"></div>
+            <h3>После filter (>10):</h3>
+            <div id="afterFilter" class="code-block"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
